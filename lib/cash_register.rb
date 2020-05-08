@@ -6,6 +6,7 @@ class CashRegister
     @total = 0
     @discount = discount
     @items = []
+    binding.pry
   end
 
   def add_item(item, price, quantity = 1)
@@ -34,6 +35,6 @@ end
 
   def void_last_transaction
     @total -= @price
-    binding.pry
+
   end
 end
