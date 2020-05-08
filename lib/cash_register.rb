@@ -5,8 +5,8 @@ class CashRegister
   def initilization(discount = 0)
     @total = 0
     @discount = discount
-    @items = []
     binding.pry
+    @items = []
   end
 
   def add_item(item, price, quantity = 1)
